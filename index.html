@@ -9,8 +9,9 @@
 </head>
 <body>
   <header>
+    <span class="logo">🪄</span>
     <h1>Password Wizard</h1>
-    <h2>Make a password appear out of thin air</h2>
+    <h2>✨ Make a password appear out of thin air ✨</h2>
   </header>
   <main>
     <div class="pw-gen-wrapper">
@@ -22,26 +23,27 @@
         <fieldset class="pw-settings">
           <label for="char-length">Character Length</label>
           <input type="range" name="char-length" id="char-length" value="12" min="5" max="128">
-          <label for="uppercase">Include Uppercase Letters</label>
-          <input type="checkbox" name="uppercase" id="uppercase">
-          <label for="lowercase">Include Lowercase Letters</label>
-          <input type="checkbox" name="lowercase" id="lowercase">
-          <label for="numbers">Include Numbers</label>
-          <input type="checkbox" name="numbers" id="numbers">
-          <label for="symbols">Include Symbols</label>
-          <input type="checkbox" name="symbols" id="symbols">
+
+          <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase"> Include Uppercase Letters</label>
+
+          <label for="lowercase"><input type="checkbox" name="lowercase" id="lowercase"> Include Lowercase Letters</label>
+          
+          <label for="numbers"><input type="checkbox" name="numbers" id="numbers"> Include Numbers</label>
+          
+          <label for="symbols"><input type="checkbox" name="symbols" id="symbols"> Include Symbols</label>
+          
+          <div class="pw-strength">
+            <span>Strength</span>
+            <ul>
+              <li class="bar" id="Very-Weak"></li>
+              <li class="bar" id="Weak"></li>
+              <li class="bar" id="Medium"></li>
+              <li class="bar" id="Strong"></li>
+              <li class="bar" id="Very-Strong"></li>
+            </ul>
+          </div>
+          <button id="generate">Generate</button>
         </fieldset>
-        <div class="pw-strength">
-          <span>Strength</span>
-          <ul>
-            <li>Very Weak</li>
-            <li>Weak</li>
-            <li>Medium</li>
-            <li>Strong</li>
-            <li>Very Strong</li>
-          </ul>
-        </div>
-        <button>Generate</button>
       </form>
     </div>
   </main>
