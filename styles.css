@@ -8,6 +8,27 @@ body {
   font-family: monospace;
   background: #0C0B0F;
   color: #F0EFF6;
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display:flex;
+}
+
+.logo {
+  font-size: 3rem;
+  position:relative;
+  bottom:2rem;
+}
+
+
+footer {
+  position:absolute;
+  bottom:0;
 }
 
 form {
@@ -22,14 +43,9 @@ fieldset {
   display:flex;
   flex-direction: column;
   padding:1rem;
-  gap:0.75rem;
+  gap:1rem;
   border:none;
 }
-
-.logo {
-  font-size: 80px;
-}
-
 .pw-output {
   padding:0.25rem;
 }
@@ -39,7 +55,12 @@ fieldset {
   border:none;
   font-size: 1.5rem;
   padding-left: 0.5rem;
-  color: #4C4A54;
+  color: grey;
+}
+
+label[for=char-length]:after {
+  content: ':)';
+  float:right;
 }
 
 /* password strength indicator */
@@ -47,6 +68,7 @@ fieldset {
   text-transform: uppercase;
   display:flex;
   justify-content: space-between;
+  align-items: center;
   padding:1rem;
   background: #17161D;
 }
@@ -68,10 +90,16 @@ fieldset {
 #generate {
   padding:0.5rem;
   text-transform: uppercase;
+  background: #A5FEAF;
+  border:none;
 }
 
 #generate:after {
   content: '→';
   padding-left: 0.5rem;
+}
+
+#generate:hover {
+  cursor: url('favicon/favicon-32x32.png'), pointer;
 }
 
