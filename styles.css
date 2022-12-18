@@ -19,18 +19,19 @@ header {
   display:flex;
 }
 
+footer {
+  position:absolute;
+  bottom:1rem;
+}
+
+/* logo */
 .logo {
   font-size: 3rem;
   position:relative;
   bottom:2rem;
 }
 
-
-footer {
-  position:absolute;
-  bottom:0;
-}
-
+/* generator */
 form {
   width:45ch;
   display:flex;
@@ -53,14 +54,55 @@ fieldset {
 #password {
   background: transparent;
   border:none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-left: 0.5rem;
   color: grey;
 }
 
+/* inputs */
+
 label[for=char-length]:after {
   content: ':)';
   float:right;
+}
+
+
+input[type="checkbox"] {
+  /* hide native styling */
+  appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: none;
+  margin:0;
+  /* custom styling */
+  position: relative;
+  font: inherit;
+  color: currentColor;
+  width:1em;
+  height:1em;
+  border: 0.15em solid #A5FEAF;
+}
+
+input[type="checkbox"]::before {
+  content: "✔";
+  position: absolute;
+  font-size: 1.2em;
+  right: -1px;
+  top: -0.3em;
+  visibility: hidden;
+  color:black;
+}
+input[type="checkbox"]:checked::before {
+  /* Use `visibility` instead of `display` to avoid recalculating layout */
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked {
+  background: #A5FEAF;
+}
+
+input[type="range"] {
+  
 }
 
 /* password strength indicator */
@@ -101,5 +143,8 @@ label[for=char-length]:after {
 
 #generate:hover {
   cursor: url('favicon/favicon-32x32.png'), pointer;
+  background:transparent;
+  outline: 0.1rem solid #A5FEAF;
+  color: #A5FEAF;
 }
 
