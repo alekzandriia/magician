@@ -4,12 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password Wizard</title>
+  <title>Password Magician</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    
+    <h1>Password Wizard</h1>
+    <h2>Make a password appear out of thin air</h2>
   </header>
-  
+  <main>
+    <div class="pw-gen-wrapper">
+      <form>
+        <fieldset class="pw-output">
+          <label for="password"></label>
+          <input type="text" id="password">
+        </fieldset>
+        <fieldset class="pw-settings">
+          <label for="char-length">Character Length</label>
+          <input type="range" name="char-length" id="char-length" value="12" min="5" max="128">
+          <label for="uppercase">Include Uppercase Letters</label>
+          <input type="checkbox" name="uppercase" id="uppercase">
+          <label for="lowercase">Include Lowercase Letters</label>
+          <input type="checkbox" name="lowercase" id="lowercase">
+          <label for="numbers">Include Numbers</label>
+          <input type="checkbox" name="numbers" id="numbers">
+          <label for="symbols">Include Symbols</label>
+          <input type="checkbox" name="symbols" id="symbols">
+        </fieldset>
+        <div class="pw-strength">
+          <span>Strength</span>
+          <ul>
+            <li>Very Weak</li>
+            <li>Weak</li>
+            <li>Medium</li>
+            <li>Strong</li>
+            <li>Very Strong</li>
+          </ul>
+        </div>
+        <button>Generate</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
