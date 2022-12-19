@@ -23,6 +23,10 @@ header {
   top:0;
 }
 
+header:hover {
+  cursor: url('images/favicon-32x32.png'), crosshair;
+}
+
 .top-bar {
   display:flex;
   align-items: center;
@@ -39,6 +43,9 @@ header {
 footer {
   position:absolute;
   bottom:1rem;
+}
+footer:hover {
+  cursor: url('images/favicon-32x32.png'), crosshair;
 }
 .marquee-wrapper {
   display:flex;
@@ -110,6 +117,10 @@ fieldset {
 }
 
 /* inputs */
+
+input[type="checkbox"]:hover {
+  cursor:pointer;
+}
 
 label[for=char-length]:after {
   content: ':)';
