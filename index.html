@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magician</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
   <header>
-    <span class="logo">🪄</span>
-    <h1>Magician</h1>
+    <div class="top-bar">
+      <h1>Magician</h1>
+    </div>
   </header>
   <main>
     <div class="pw-gen-wrapper">
@@ -47,7 +49,21 @@
     </div>
   </main>
   <footer>
-    <span>✨ Make a password appear out of thin air ✨</span>
+    <div class="marquee-wrapper">
+      <ul class="marquee" aria-hidden="true">
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+      </ul>
+      <!-- mirrors content above -->
+      <ul class="marquee" aria-hidden="true">
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+        <li class="marquee-text">abracadabra, passwordus generatus</li>
+      </ul>
+    </div>
   </footer>
   <script src="app.js"></script>
 </body>
