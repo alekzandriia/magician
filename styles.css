@@ -40,6 +40,10 @@ header:hover {
   font-size: 2rem;
 }
 
+#lengthNum {
+  float:right;
+}
+
 footer {
   position:absolute;
   bottom:1rem;
@@ -120,11 +124,6 @@ fieldset {
 
 input[type="checkbox"]:hover {
   cursor:pointer;
-}
-
-label[for=char-length]:after {
-  content: ':)';
-  float:right;
 }
 
 input:focus {
