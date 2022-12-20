@@ -22,16 +22,12 @@
           <input type="text" id="password" placeholder="Op3n*s3s4m3!">
         </fieldset>
         <fieldset class="pw-settings">
-          <label for="length">Character Length <span id="lengthNum">12</span></label>
+          <label for="length">Character Length <span id="lengthNum"></span></label>
           <input type="range" name="length" id="length" value="12" min="5" max="128">
-
-          <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase"> Include Uppercase Letters</label>
-
-          <label for="lowercase"><input type="checkbox" name="lowercase" id="lowercase"> Include Lowercase Letters</label>
-          
-          <label for="numbers"><input type="checkbox" name="numbers" id="numbers"> Include Numbers</label>
-          
-          <label for="symbols"><input type="checkbox" name="symbols" id="symbols"> Include Symbols</label>
+          <label for="lowercase"><input type="checkbox" class="option" name="lowercase" id="lowercase" onclick="return false;" checked> Include Lowercase Letters</label> <!--checked by default (checked) & can't be unchecked (onclick="return false;") -->
+          <label for="uppercase"><input type="checkbox" class="option" name="uppercase" id="uppercase"> Include Uppercase Letters</label>
+          <label for="numbers"><input type="checkbox" class="option" name="numbers" id="numbers"> Include Numbers</label>
+          <label for="symbols"><input type="checkbox" class="option" name="symbols" id="symbols"> Include Symbols</label>
           
           <div class="pw-strength">
             <span>Strength</span>

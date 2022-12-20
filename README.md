@@ -63,6 +63,9 @@ Styling Checkbox Input
 [MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
 [Modern CSS](https://moderncss.dev/pure-css-custom-checkbox-style/)
 
+Making lowercase checkbox checked by default and disabling the ability to uncheck the box
+[Varunver](https://varunver.wordpress.com/2014/03/06/javascript-make-checkbox-checked-and-such-that-it-cannot-be-unchecked/)
+
 Styling Range Input
 [Smashing Magazine](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/)
 
