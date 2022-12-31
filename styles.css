@@ -251,3 +251,6 @@ input[type="range"]::-moz-range-thumb {
   color: #A5FEAF;
 }
 
+.filled {
+  background-color: #A5FEAF;
+}
