@@ -49,6 +49,8 @@ header:hover {
 footer {
   position:absolute;
   bottom:1rem;
+  width:100vw;
+  overflow-x: hidden;
 }
 footer:hover {
   cursor: url('images/favicon-32x32.png'), crosshair;
