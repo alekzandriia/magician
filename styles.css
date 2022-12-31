@@ -217,6 +217,7 @@ input[type="range"]::-moz-range-thumb {
   padding:0.5rem;
   text-transform: uppercase;
   background: #A5FEAF;
+  color: white;
   border:none;
 }
 
